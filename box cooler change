@@ -1,0 +1,3 @@
+<input type="text" 
+onfocus="this.style.background='lightblue'" 
+onblur="this.style.background='pink'">
