@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="n1">no1<br><br>
+<input type="text" id="n2">no2<br><br>
+
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">-</button>
+<button onclick="calc('*')">*</button>
+<button onclick="calc('/')">/</button>
+
+<script>
+function calc(op){
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+    let res;
+
+    if(op=='+') res = a+b;
+    if(op=='-') res = a-b;
+    if(op=='*') res = a*b;
+    if(op=='/') res = a/b;
+
+    alert("Your Result: " + res);
+}
+</script>
+
+</body>
+</html>
