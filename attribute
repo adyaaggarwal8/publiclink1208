@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<p id="id1">ID</p>
+<p class="cls">Class</p>
+<p>Element</p>
+
+<input type="text" placeholder="Attribute">
+
+<button id="btn">Test</button>
+
+<script>
+$("#btn").click(function(){
+    $("#id1").css("color","red");      
+    $(".cls").css("color","green");     
+    $("p").css("font-weight","bold");   
+    $("[type='text']").css("background","blue"); 
+});
+</script>
+
+</body>
+</html>
