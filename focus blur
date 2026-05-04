@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<form id="form">
+<input type="text" id="input" placeholder="Click me">
+<button type="submit">Submit</button>
+</form>
+
+<p id="msg">click me</p>
+
+<script>
+$("#input").focus(function(){
+    $(this).css("background","pink");
+});
+
+$("#input").blur(function(){
+    $(this).css("background","green");
+});
+
+$("#msg").dblclick(function(){
+    alert("Double Clicked!");
+});
+
+$("#form").submit(function(){
+    alert("Form Submitted");
+});
+</script>
+
+</body>
+</html>
