@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<a href="https://www.google.com" id="link">
+    it shows the mouse events
+</a>
+
+<script>
+$("#link").mouseover(function(){
+    $("body").css("background","lightgreen");
+    $(this).text("I'm green now");
+});
+
+$("#link").mouseout(function(){
+    $("body").css("background","red");
+    $(this).text("I'm red now");
+});
+</script>
+
+</body>
+</html>
