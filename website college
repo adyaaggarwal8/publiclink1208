@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: blue;
+            color: white;}
+
+        nav {
+            background-color: green;
+        }
+
+      
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px;
+            color: white;
+        }
+
+        nav ul li:hover {
+            background-color: red;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: yellow;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Computer Science Department</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Faculty</a>
+            <ul>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Courses</a>
+            <ul>
+                <li><a href="#">BCA</a></li>
+                <li><a href="#">MCA</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Activities</a>
+            <ul>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="content">
+    <h2>Welcome</h2>
+    <p>This is the department webpage.</p>
+</div>
+
+<footer>
+    <p> 2026 Department</p>
+</footer>
+
+</body>
+</html>
