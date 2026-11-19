@@ -1,0 +1,18 @@
+import threading
+
+numbers = [1, 2, 3, 4, 5]
+
+result = 0
+
+def calculate_sum():
+    global result
+
+    result = sum(numbers)
+
+t = threading.Thread(target=calculate_sum)
+
+t.start()
+
+t.join()
+
+print("Sum of numbers:", result)
