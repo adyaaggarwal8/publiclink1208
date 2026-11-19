@@ -1,0 +1,6 @@
+// Q4 — Parent and Child Processes using fork() and exec()
+import os
+
+pid = os.fork()
+
+print("Hello from process", os.getpid())
