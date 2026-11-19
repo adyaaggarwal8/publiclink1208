@@ -1,0 +1,62 @@
+blocks = [100, 500, 200, 300, 600]
+
+processes = [212, 417, 112, 426]
+
+def first_fit():
+    memory = blocks.copy()
+
+    print("\nFIRST FIT")
+
+    for p in processes:
+        for i in range(len(memory)):
+
+            if memory[i] >= p:
+                print(p, "allocated to block", i + 1)
+                memory[i] -= p
+                break
+
+        else:
+            print(p, "Not Allocated")
+
+
+def best_fit():
+    memory = blocks.copy()
+
+    print("\nBEST FIT")
+
+    for p in processes:
+        choices = [i for i in range(len(memory))
+                   if memory[i] >= p]
+
+        if choices:
+            i = min(choices, key=lambda x: memory[x])
+
+            print(p, "allocated to block", i + 1)
+            memory[i] -= p
+
+        else:
+            print(p, "Not Allocated")
+
+
+def worst_fit():
+    memory = blocks.copy()
+
+    print("\nWORST FIT")
+
+    for p in processes:
+        choices = [i for i in range(len(memory))
+                   if memory[i] >= p]
+
+        if choices:
+            i = max(choices, key=lambda x: memory[x])
+
+            print(p, "allocated to block", i + 1)
+            memory[i] -= p
+
+        else:
+            print(p, "Not Allocated")
+
+
+first_fit()
+best_fit()
+worst_fit()
